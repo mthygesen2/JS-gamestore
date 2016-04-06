@@ -1,10 +1,14 @@
 { "games": [{
-  "name": "MachiKoro",
-  "price": 35,
-  "image": "http://img.ozgameshop.com/card_games/expansions/chez_geek_slack_to_the_future_xl.jpg",
-  "description": "This is a really cool game",
-  "player": "2-10",
-  "age": "8 +",
-  "difficulty": "Extreme"
+    "name": "MachiKoro",
+    "price": 35,
+    "image": "http://img.ozgameshop.com/card_games/party_and_family/machi_koro_raw.jpg",
+    "description": "This is a really cool game",
+    "player": "2-10",
+    "age": "8 +",
+    "difficulty": "Extreme"
+  }],
+  "reviews": [{
+    "rating": 5,
+    "message": "This game was extremely extreme!"
   }]
 }

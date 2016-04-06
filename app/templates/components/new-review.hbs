@@ -1,0 +1,19 @@
+{{#if addNewReview}}
+  <h1>Review Game</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        {{input type="number" value=rating id="rating"}}
+      </div>
+
+      <div class="form-group">
+        <label for="messageContent">Review</label>
+        {{input value=messageContent id="messageContent"}}
+      </div>
+      <button {{action 'save'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'messageFormShow'}}>Add a Review</button>
+{{/if}}

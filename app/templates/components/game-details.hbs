@@ -6,3 +6,13 @@
     {{game.description}} <br>
     {{game.player}} {{game.age}} {{game.difficulty}}
   </p>
+
+
+<h3>Reviews</h3>
+  <div class="reviewSection">
+    <ul>
+      {{#each game.reviews as |review|}}
+        {{review-tile review=review}}
+      {{/each}}
+    </ul>
+  </div>
