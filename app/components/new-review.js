@@ -6,14 +6,14 @@ export default Ember.Component.extend({
     reviewFormShow() {
       this.set('addNewReview', true);
     },
-    save() {
+    saveReview() {
       var params = {
         rating: this.get('rating'),
-        messageContent: this.get('messageContent'),
+        message: this.get('message'),
         game: this.get('game')
       };
       this.set('addNewReview', false);
-      this.sendAction('save', params);
+      this.sendAction('saveReview', params);
     }
   }
 });

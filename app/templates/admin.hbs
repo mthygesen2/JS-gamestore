@@ -1,0 +1,11 @@
+<div class="adminContainer">
+  <h2>Add New Game</h2>
+  {{new-game saveGame="saveGame"}}
+  <h2>Games</h2>
+
+  <ul>
+    {{#each model as |game|}}
+      {{admin-tile game=game destroyGame="destroyGame"}}
+    {{/each}}
+  </ul>
+</div>

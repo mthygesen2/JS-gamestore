@@ -1,0 +1,44 @@
+{{#if addNewGame}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        {{input value=name id="name"}}
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        {{input value=price id="price"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        {{input value=description id="description"}}
+      </div>
+
+      <div class="form-group">
+        <label for="player">Player Count</label>
+        {{input value=player id="player"}}
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age Range</label>
+        {{input value=age id="age"}}
+      </div>
+
+      <div class="form-group">
+        <label for="difficulty">Difficulty Level</label>
+        {{input value=difficulty id="difficulty"}}
+      </div>
+
+      <button {{action 'saveGame'}}>Save Game</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'gameFormShow'}}>New Game</button>
+{{/if}}
