@@ -10,6 +10,7 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+  flex:1;
 }
 
 ul {
@@ -24,4 +25,24 @@ a {
 h1 {
   font-family: $brand-font;
   color: $brand-color;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+footer {
+  height: 100px;
+  margin-top: 50px;
+  background: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 1.5em;
+    font-family: $brand-font;
+  }
 }

@@ -1,15 +1,17 @@
-<header>
-  {{#link-to 'index'}}<h1>Game of Games</h1>{{/link-to}}
-  <nav>
-    {{#link-to 'boardgames'}}Board Games{{/link-to}}
-    {{#link-to 'cardgames'}}Card Games{{/link-to}}
-    {{#link-to 'tablegame'}}Tabletop RPGs Games{{/link-to}}
-    {{cart-quantity}}
-  </nav>
-</header>
-<div class="container">
-  {{outlet}}
+<div class="main">
+  <header>
+    {{#link-to 'index'}}<h1>Game of Games</h1>{{/link-to}}
+    <nav>
+      {{#link-to 'boardgames'}}Board Games{{/link-to}}
+      {{#link-to 'cardgames'}}Card Games{{/link-to}}
+      {{#link-to 'tablegame'}}Tabletop RPGs Games{{/link-to}}
+      {{cart-quantity}}
+    </nav>
+  </header>
+  <div class="container">
+    {{outlet}}
+  </div>
+  <footer>
+    {{#link-to 'admin'}}Admin{{/link-to}}
+  </footer>
 </div>
-<footer>
-  {{#link-to 'admin'}}Admin{{/link-to}}
-</footer>
