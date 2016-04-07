@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('boardgames');
   this.route('selectedgame', {path: '/selectedgame/:game_id'});
   this.route('admin');
+  this.route('cart');
 });
 
 export default Router;
