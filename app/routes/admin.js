@@ -9,6 +9,15 @@ export default Ember.Route.extend({
       var newGame = this.store.createRecord('game', params);
       newGame.save();
       this.transitionTo('admin');
+    },
+    destroyGame(game) {
+      var review_deletions = game.get('reviews').map(function(review) {
+        return review.destroyRecord();
+      });
+      Ember.RSVP.all(review_deletions).then(function() {
+        return game.destroyRecord();
+      });
+      this.transitionTo('admin');
     }
   }
 });
