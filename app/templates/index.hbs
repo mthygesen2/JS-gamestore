@@ -1,3 +1,15 @@
+<h1>Featured Board Games</h1>
+<div class="game-block">
+  {{#each model.boardgames as |game|}}
+    {{game-tile game=game}}
+  {{/each}}
 
-{{#link-to 'boardgames'}}<h1>Board Games</h1>{{/link-to}}
-{{#link-to 'admin'}}<h1>Admin Page</h1>{{/link-to}}
+</div>
+
+<h1>Featured Card Games</h1>
+<div class="game-block">
+  {{#each model.cardgames as |game|}}
+    {{game-tile game=game}}
+  {{/each}}
+</div>
+<h1>Featured Tabletop RPGs</h1>

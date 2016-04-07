@@ -8,5 +8,6 @@ export default DS.Model.extend({
   player: DS.attr(),
   age: DS.attr(),
   difficulty: DS.attr(),
+  type: DS.attr(),
   reviews: DS.hasMany('review', {async:true})
 });

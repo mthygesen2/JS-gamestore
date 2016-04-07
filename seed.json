@@ -5,7 +5,8 @@
     "description": "This is a really cool game",
     "player": "2-10",
     "age": "8 +",
-    "difficulty": "Extreme"
+    "difficulty": "Extreme",
+    "type": "boardgame"
   }],
   "reviews": [{
     "rating": 5,

@@ -1,6 +1,10 @@
 
 {{#link-to 'selectedgame' game.id}}
+<div class="game-detail">
   <img class="game-thumbnail" src="{{game.image}}" alt="{{game.name}}" />
-  <h4>{{game.name}}</h4>
-  <p>${{game.price}}</p>
+  <div class="game-meta">
+    <h3>{{game.name}}</h3>
+    <p>${{game.price}}</p>
+  </div>
+</div>
 {{/link-to}}

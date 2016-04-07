@@ -7,6 +7,10 @@ body {
   background: $background-color;
   color: $text-color;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
 
 ul {
   list-style: none;

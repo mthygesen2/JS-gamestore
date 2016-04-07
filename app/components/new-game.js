@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         player: this.get('player'),
         age: this.get('age'),
         difficulty: this.get('difficulty'),
+        type: this.get('type')
       };
       this.set('addNewGame', false);
       this.sendAction('saveGame', params);

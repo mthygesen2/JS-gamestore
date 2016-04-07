@@ -1,7 +1,31 @@
 .game-block {
-  border: 1px solid red;
-  width: 300px;
-  .game-thumbnail {
-    width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: $text-font;
+  justify-content: center;
+  .game-detail {
+    width: 250px;
+    margin: 5px;
+    .game-thumbnail {
+      width: 100%;
+      border: 2px solid $text-color;
+    }
+    .game-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3{
+        font-size: 1.5em;
+        color: $text-color;
+        margin: 0;
+        width: 80%;
+      }
+      p {
+        width: 20%;
+        font-size: 1.5em;
+        color: $text-color;
+        margin: 0;
+      }
+    }
   }
 }
