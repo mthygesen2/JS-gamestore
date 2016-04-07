@@ -5,9 +5,19 @@
 body {
   margin: 0;
   background: $background-color;
+  color: $text-color;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $brand-font;
+  color: $brand-color;
 }

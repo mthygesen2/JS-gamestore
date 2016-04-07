@@ -1,8 +1,13 @@
 <header>
-  <h1>Game of Games</h1>
-  {{#link-to 'cart'}}Shopping Cart{{/link-to}}
-  {{#link-to 'index'}}Home{{/link-to}}
-  {{#link-to 'boardgames'}}Board Games{{/link-to}}
-
+  {{#link-to 'index'}}<h1>Game of Games</h1>{{/link-to}}
+  <nav>
+    {{#link-to 'boardgames'}}Board Games{{/link-to}}
+    {{#link-to 'cart'}}Items in Cart: NaN{{/link-to}}
+  </nav>
 </header>
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
+<footer>
+  {{#link-to 'admin'}}Admin{{/link-to}}
+</footer>
