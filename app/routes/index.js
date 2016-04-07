@@ -11,6 +11,10 @@ export default Ember.Route.extend({
         orderBy: 'type',
         equalTo: 'cardgame',
       }),
+      tablegames: this.store.query('game', {
+        orderBy: 'type',
+        equalTo: 'tablegame',
+      }),
       reviews: this.store.findAll('review')
     });
   },

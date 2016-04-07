@@ -13,3 +13,8 @@
   {{/each}}
 </div>
 <h1>Featured Tabletop RPGs</h1>
+<div class="game-block">
+  {{#each model.tablegames as |game|}}
+    {{game-tile game=game}}
+  {{/each}}
+</div>

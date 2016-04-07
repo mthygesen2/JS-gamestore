@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       games: this.store.query('game', {
         orderBy: 'type',
-        equalTo: 'cardgame',
+        equalTo: 'tablegame',
       }),
       reviews: this.store.findAll('review')
     });

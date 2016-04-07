@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('admin');
   this.route('cart');
   this.route('cardgames');
+  this.route('tablegame');
 });
 
 export default Router;
