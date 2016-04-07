@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     updateGameFormShow() {
       this.set('updateGameForm', true);
     },
-    updateGame() {
+    updateGame(game) {
       var params = {
         name: this.get('name'),
         price: this.get('price'),
@@ -18,7 +18,7 @@ export default Ember.Component.extend({
         type: this.get('type')
       };
       this.set('updateGameForm', false);
-      this.sendAction('updateGame', params);
+      this.sendAction('updateGame', game, params);
     }
   }
   });
