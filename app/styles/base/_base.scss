@@ -37,17 +37,19 @@ h1 {
 footer {
   height: 250px;
   margin-top: 50px;
-  background: lighten($purple, 20%);
+  background: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  .footer-nav{
+  .footer-nav {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 75%;
+  }
     a, i {
       font-size: 1.5em;
       font-family: $brand-font;
       color: $brand-color;
     }
   }
-}
