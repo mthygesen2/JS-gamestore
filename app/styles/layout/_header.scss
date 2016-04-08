@@ -1,26 +1,24 @@
 header {
   min-width: 300px;
-  height: 200px;
+  height: 350px;
   display: flex;
   flex-flow: column;
   align-items: center;
   @media screen and (min-width: 768px) {
-    justify-content: space-between;
+    justify-content: space-around;
     height: 250px;
     }
   h1 {
+    color: $text-color;
     font-size: 2.5em;
-    margin-bottom: 0;
-    @media screen and (min-width: 768px) {
-      font-size: 4em;
-    }
+    padding: 25px 0;
   }
   nav {
     display: flex;
     flex-flow: column;
     align-items: center;
     max-width: 1200px;
-    margin-bottom: 25px;
+    border-top: 1px solid lighten($text-color, 50%);
     @media screen and (min-width: 768px) {
       flex-flow: row;
       width: 100%;
@@ -28,8 +26,8 @@ header {
       justify-content: space-around;
     }
     a {
-      padding: 10px 0;
-      font-size: 1.5em;
+      padding: 20px 0;
+      font-size: 1.2em;
       font-family: $brand-font;
     }
   }

@@ -1,6 +1,7 @@
 <div class="main">
   <header>
     {{#link-to 'index'}}<h1>Game of Games</h1>{{/link-to}}
+
     <nav>
       {{#link-to 'boardgames'}}Board Games{{/link-to}}
       {{#link-to 'cardgames'}}Card Games{{/link-to}}
@@ -12,6 +13,10 @@
     {{outlet}}
   </div>
   <footer>
-    {{#link-to 'admin'}}Admin{{/link-to}}
+    <div class="footer-nav">
+      {{#link-to 'admin'}}Admin{{/link-to}}
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
   </footer>
 </div>

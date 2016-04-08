@@ -9,10 +9,10 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   flex:1;
 }
-
 ul {
   list-style: none;
   padding: 0;
@@ -35,14 +35,19 @@ h1 {
 
 
 footer {
-  height: 100px;
+  height: 250px;
   margin-top: 50px;
-  background: #999;
+  background: lighten($purple, 20%);
   display: flex;
   justify-content: center;
   align-items: center;
-  a {
-    font-size: 1.5em;
-    font-family: $brand-font;
+  .footer-nav{
+    display: flex;
+    justify-content: space-around;
+    a, i {
+      font-size: 1.5em;
+      font-family: $brand-font;
+      color: $brand-color;
+    }
   }
 }

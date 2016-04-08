@@ -1,20 +1,22 @@
-<h1>Featured Board Games</h1>
-<div class="game-block">
-  {{#each model.boardgames as |game|}}
-    {{game-tile game=game}}
-  {{/each}}
+<div class="index">
+  <h1>Featured Board Games</h1>
+  <div class="game-block">
+    {{#each model.boardgames as |game|}}
+      {{game-tile game=game}}
+    {{/each}}
 
-</div>
+  </div>
 
-<h1>Featured Card Games</h1>
-<div class="game-block">
-  {{#each model.cardgames as |game|}}
-    {{game-tile game=game}}
-  {{/each}}
-</div>
-<h1>Featured Tabletop RPGs</h1>
-<div class="game-block">
-  {{#each model.tablegames as |game|}}
-    {{game-tile game=game}}
-  {{/each}}
+  <h1>Featured Card Games</h1>
+  <div class="game-block">
+    {{#each model.cardgames as |game|}}
+      {{game-tile game=game}}
+    {{/each}}
+  </div>
+  <h1>Featured Tabletop RPGs</h1>
+  <div class="game-block">
+    {{#each model.tablegames as |game|}}
+      {{game-tile game=game}}
+    {{/each}}
+  </div>
 </div>
