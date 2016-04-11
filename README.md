@@ -1,7 +1,6 @@
 # Online-marketplace
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an e-commerce site for a game store called Game of Games. It was built using JavaScript Ember. The user will be able to read the details of a game, buy/review a game and the admin will be able to edit, add, delete a game.  This is a basic layout for an e-commerice site. 
 
 ## Prerequisites
 
@@ -50,4 +49,9 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+##License 
+MIT 
+
+Copyright (c) 2016 **_Mao Thygesen_**
 
