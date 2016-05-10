@@ -1,20 +1,23 @@
-
+<div class="selected-game">
   <img src="{{game.image}}" alt="{{game.name}}" />
   <h3>{{game.name}}</h3>
   <p>${{game.price}}</p>
   <p>
     {{game.description}} <br>
-    {{game.player}} {{game.age}} {{game.difficulty}}
+    <span>Players:</span> {{game.player}} <br>
+    <span>Age Range:</span> {{game.age}} <br>
+    <span>Difficulty:</span> {{game.difficulty}}
   </p>
-<button {{action 'addToCart' game}}>Add to Cart</button>
-
-<h3>Reviews</h3>
-  <div class="reviewSection">
-    <ul>
-      {{#each game.reviews as |review|}}
-        {{review-tile review=review}}
-      {{/each}}
-    </ul>
+  <button {{action 'addToCart' game}}>Add to Cart</button>
+  <div class="review-container">
+    <h3>Reviews</h3>
+    <div class="reviewSection">
+      <ul>
+        {{#each game.reviews as |review|}}
+          {{review-tile review=review}}
+        {{/each}}
+      </ul>
+    </div>
   </div>
-
   {{new-review game=game saveReview="saveReview"}}
+</div>

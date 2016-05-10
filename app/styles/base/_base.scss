@@ -6,7 +6,8 @@ body {
   margin: 0;
   background: url("/assets/images/bg.png") center;
   background-size: auto;
-  color: $main-color;
+  color: $text-color;
+  font-family: $text-font;
 }
 .container {
   max-width: 1200px;
