@@ -25,6 +25,7 @@ header {
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     max-width: 1200px;
     border-top: 5px solid lighten($text-color, 50%);
     border-bottom: 5px solid lighten($text-color, 50%);
@@ -35,7 +36,7 @@ header {
       justify-content: space-around;
     }
     a {
-      // padding: 20px 0;
+      padding: 20px 0;
       font-size: 1.2em;
       font-family: $brand-font;
       color: $nav-bar;
