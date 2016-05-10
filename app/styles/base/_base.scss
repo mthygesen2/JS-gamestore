@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  background: $background-color;
+  background: url("/assets/images/bg.png") center;
+  background-size: auto;
   color: $text-color;
 }
 .container {
