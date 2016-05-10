@@ -1,0 +1,12 @@
+.new-game-form {
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+    input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: lighten($purple, 25%);
+  }
+}

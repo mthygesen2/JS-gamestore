@@ -19,3 +19,13 @@ $nav-bar: #17A398;
 $main-color: #17A398;
 
 $h1-bg: #EFE9F4;
+
+
+%button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+  background: $main-color;
+  border:none;
+  color: white;
+}

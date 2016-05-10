@@ -25,19 +25,24 @@
     font-size: 2em;
     align-self: center;
   }
-
-  span {
-    color: $main-color;
-    font-size: 1.1em;
-    line-height: 1.5;
+  p {
+    position: relative;
+    img {
+      position: absolute;
+      top: 150px;
+      left: 450px;
+      z-index: -999;
+      -ms-transform: rotate(-25deg); /* IE 9 */
+      -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+      transform: rotate(-25deg);
+    }
+    span {
+      color: $main-color;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
   }
   button {
-    width: 150px;
-    height: 50px;
-    font-size: 1.2em;
-    background: $main-color;
-    border:none;
-    color: white;
-
+    @extend %button;
   }
 }
