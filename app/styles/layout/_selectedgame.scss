@@ -2,15 +2,30 @@
   display: flex;
   flex-flow: column;
   padding: 15px;
+  max-width: 800px;
+  margin: 50px auto;
   img {
-    width: 80%;
-    height: auto;
     align-self: center;
+    height: auto;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
   }
+  .background-color{
+    z-index: -999;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    -ms-transform: rotate(25deg); /* IE 9 */
+    -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
+    transform: rotate(25deg);
+  }
+
   h3 {
     font-size: 2em;
     align-self: center;
   }
+
   span {
     color: $main-color;
     font-size: 1.1em;
@@ -23,5 +38,6 @@
     background: $main-color;
     border:none;
     color: white;
+
   }
 }

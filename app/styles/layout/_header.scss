@@ -12,7 +12,13 @@ header {
     color: $text-color;
     font-size: 2.5em;
     padding: 25px 0;
-    font-family: $text-font;
+    font-family: $header-font;
+    @media screen and (min-width: 768px) {
+      font-size: 4em;
+      border-right: 2px solid $text-color;
+      border-left: 2px solid $text-color;
+      padding: 0 15px;
+    }
   }
   nav {
     height: 300px;
@@ -21,14 +27,15 @@ header {
     align-items: center;
     max-width: 1200px;
     border-top: 5px solid lighten($text-color, 50%);
+    border-bottom: 5px solid lighten($text-color, 50%);
     @media screen and (min-width: 768px) {
       flex-flow: row;
       width: 100%;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-around;
     }
     a {
-      padding: 20px 0;
+      // padding: 20px 0;
       font-size: 1.2em;
       font-family: $brand-font;
       color: $nav-bar;

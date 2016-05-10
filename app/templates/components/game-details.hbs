@@ -1,12 +1,14 @@
 <div class="selected-game">
-  <img src="{{game.image}}" alt="{{game.name}}" />
+    <img src="{{game.image}}" alt="{{game.name}}" />
+    <img class="background-color"src="/assets/images/rectangle.png" alt="background color" />
   <h3>{{game.name}}</h3>
-  <p>${{game.price}}</p>
+
   <p>
     {{game.description}} <br>
     <span>Players:</span> {{game.player}} <br>
     <span>Age Range:</span> {{game.age}} <br>
-    <span>Difficulty:</span> {{game.difficulty}}
+    <span>Difficulty:</span> {{game.difficulty}}<br>
+    <span>Price:</span> ${{game.price}}
   </p>
   <button {{action 'addToCart' game}}>Add to Cart</button>
   <div class="review-container">
