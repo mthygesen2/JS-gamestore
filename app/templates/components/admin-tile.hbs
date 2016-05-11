@@ -2,5 +2,5 @@
   <img src="{{game.image}}">
   <p>{{game.name}}</p>
   {{update-game game=game updateGame="updateGame"}}
-  <button {{action 'deleteGame' game}}>Delete Game</button>
+  <button class="delete" {{action 'deleteGame' game}}>Delete Game</button>
 </li>

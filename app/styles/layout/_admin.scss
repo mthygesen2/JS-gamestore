@@ -2,13 +2,27 @@
   border: 1px solid red;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin: 10px 0;
   width: 100%;
   min-height: 50px;
+  p {
+    text-align: center;
+    width: 100px;
+  }
   img {
     width: 50px;
     flex-grow: 1 100%;
     border: 1px solid green;
+  }
+  button {
+    width: 80px;
+    background-color: darken($main-color, 10%);
+    border: none;
+    height: 20px;
+  }
+  .delete{
+    background-color: $delete;
   }
 }
 
@@ -18,4 +32,5 @@
     color: $main-color;
     text-decoration: underline;
   }
+
 }
