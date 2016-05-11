@@ -1,11 +1,13 @@
 .admin-games  {
-  border: 1px solid red;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 10px 0;
   width: 100%;
   min-height: 50px;
+  width: 350px;
+
   p {
     text-align: center;
     width: 100px;
@@ -16,10 +18,12 @@
     border: 1px solid green;
   }
   button {
-    width: 80px;
+    width: 50px;
     background-color: darken($main-color, 10%);
     border: none;
-    height: 20px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
   }
   .delete{
     background-color: $delete;
@@ -32,5 +36,15 @@
     color: $main-color;
     text-decoration: underline;
   }
-
+  .admin-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
+    ul {
+      margin: 10px;
+    }
+  }
 }

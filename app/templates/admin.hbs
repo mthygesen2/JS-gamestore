@@ -1,22 +1,24 @@
 <div class="adminContainer">
   <h2>Add New Game</h2>
   {{new-game saveGame="saveGame"}}
-  <ul>
-    <h2>Board Games</h2>
-    {{#each model.boardgames as |game|}}
-      {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
-    {{/each}}
-  </ul>
-  <ul>
-    <h2>Card Games</h2>
-    {{#each model.cardgames as |game|}}
-      {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
-    {{/each}}
-  </ul>
-  <ul>
-    <h2>Table Top Games</h2>
-    {{#each model.tablegames as |game|}}
-      {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
-    {{/each}}
-  </ul>
+  <div class="admin-list">
+    <ul>
+      <h2>Board Games</h2>
+      {{#each model.boardgames as |game|}}
+        {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
+      {{/each}}
+    </ul>
+    <ul>
+      <h2>Card Games</h2>
+      {{#each model.cardgames as |game|}}
+        {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
+      {{/each}}
+    </ul>
+    <ul>
+      <h2>Table Top Games</h2>
+      {{#each model.tablegames as |game|}}
+        {{admin-tile game=game updateGame="updateGame" destroyGame="destroyGame"}}
+      {{/each}}
+    </ul>
+  </div>
 </div>
