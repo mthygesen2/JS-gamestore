@@ -1,10 +1,12 @@
-<h1>Your shopping cart</h1>
-
-Items: {{itemsInCart}}
-<br>
-{{#each shoppingCart.items as |item|}}
-  {{item.name}} -- {{item.price}}
-{{/each}}
-<br>
-Total: $ {{grandTotal}}
-<p>backstreet boys</p>
+<div class="cart">
+  <h1>Your shopping cart</h1>
+  <span>Items: {{itemsInCart}}</span>
+  <br>
+  <div class="cart-list">
+    {{#each shoppingCart.items as |item|}}
+      {{item.name}}  ${{item.price}}<br>
+    {{/each}}
+  </div>
+  <br>
+  <span class="total">Total: $ {{grandTotal}}</span>
+</div>
