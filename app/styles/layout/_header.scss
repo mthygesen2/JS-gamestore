@@ -15,8 +15,6 @@ header {
     font-family: $header-font;
     @media screen and (min-width: 768px) {
       font-size: 4em;
-      border-right: 2px solid $text-color;
-      border-left: 2px solid $text-color;
       padding: 0 15px;
     }
   }
