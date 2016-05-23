@@ -4,6 +4,8 @@
 
 This is an e-commerce site for a game store called Game of Games. It was built using JavaScript Ember. The user will be able to read the details of a game, buy/review a game and the admin will be able to edit, add, delete a game.  This is a basic layout for an e-commerice site. 
 
+A live version can be seen here <https://mthygesen2.github.io/JS-gamestore>
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
