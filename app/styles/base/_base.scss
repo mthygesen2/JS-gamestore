@@ -26,7 +26,7 @@ a {
 
 h1 {
   font-family: $brand-font;
-  color: darken($main-color, 10%);
+  color: $h1-color;
 }
 
 .main {
@@ -38,8 +38,8 @@ h1 {
 
 
 footer {
-  height: 250px;
-  background: white;
+  height: 150px;
+  background: url("/assets/images/ground.jpg");
   display: flex;
   align-items: center;
   .footer-nav {
