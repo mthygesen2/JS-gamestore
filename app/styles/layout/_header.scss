@@ -4,7 +4,7 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: url("/assets/images/game-background.jpg") top;
+  background: url("../assets/images/game-background.jpg") top;
   @media screen and (min-width: 768px) {
     justify-content: space-around;
     height: 500px;
