@@ -1,3 +1,5 @@
+
+
 /* jshint node: true */
 
 module.exports = function(environment) {
@@ -42,7 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/JS-gamestore/dist';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
