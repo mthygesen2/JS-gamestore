@@ -4,8 +4,7 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: url("/assets/images/game-background.jpg");
-  background-size: cover;
+  background: url("/assets/images/game-background.jpg") top;
   @media screen and (min-width: 768px) {
     justify-content: space-around;
     height: 500px;
@@ -17,9 +16,9 @@ header {
     font-family: $header-font;
     background: rgba( 255, 255, 255, 0.8);
     border-radius: 50px;
+    padding: 0 15px;
     @media screen and (min-width: 768px) {
       font-size: 4em;
-      padding: 0 15px;
     }
   }
   nav {
